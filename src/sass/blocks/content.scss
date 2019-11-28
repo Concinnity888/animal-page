@@ -3,10 +3,12 @@
     flex-direction: column;
     width: 1420px;
     margin: 0 auto;
+    margin-bottom: 150px;
 }
 
 .content__title {
     margin: 0;
+    margin-bottom: 28px;
     padding: 0;
 
     font-family: inherit;
@@ -14,5 +16,9 @@
     line-height: 36px;
     font-weight: 500;
     text-transform: uppercase;
+}
+
+.content__wrapper {
+    display: flex;
 }
 
