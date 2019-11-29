@@ -1,0 +1,87 @@
+.delivery {
+    display: flex;
+    padding-bottom: 27px;
+}
+
+.delivery__title {
+    margin-bottom: 6px;
+}
+
+.delivery__col{
+    margin-right: 28px;
+    padding-right: 103px;
+    border-right: solid 1px #E8E8E8;
+}
+
+.delivery__list,
+.delivery__list ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.delivery__list-item {
+    margin-bottom: 10px;
+
+    &:nth-last-of-type(1) {
+        margin-bottom: 0;
+    }
+}
+
+.delivery__country {
+    margin: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.delivery__region {
+    margin: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+
+    &:nth-of-type(1) {
+        margin-top: 1px;
+    }
+}
+
+.delivery__price {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 31px;
+
+    &::before {
+        content: '';
+
+        position: absolute;
+
+        top: 5px;
+        right: 16px;
+
+        width: 17px;
+        height: 20px;
+
+        background-image: url('../img/icon-rouble.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 17px auto;
+    }
+}
+
