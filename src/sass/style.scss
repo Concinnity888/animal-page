@@ -1,6 +1,6 @@
-@import 'fonts.scss';
-@import 'global.scss';
-@import 'blocks/header.scss';
+@import 'fonts';
+@import 'global';
+@import 'blocks/header';
 @import 'blocks/breadcrumbs';
 @import 'blocks/content';
 @import 'blocks/item';
@@ -11,5 +11,8 @@
 @import 'blocks/block';
 @import 'blocks/gallery';
 @import 'blocks/slider';
-@import 'blocks/footer.scss';
+@import 'blocks/sidebar';
+@import 'blocks/about';
+@import 'blocks/share';
+@import 'blocks/footer';
 

@@ -22,3 +22,13 @@
     display: flex;
 }
 
+.content__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content__inner-main {
+    width: 626px;
+    margin-right: auto;
+}
+

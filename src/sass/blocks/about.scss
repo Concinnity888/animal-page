@@ -1,0 +1,181 @@
+.about {
+    padding-top: 23px;
+}
+
+.about__title {
+    margin-bottom: 23px;
+}
+
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
+}
+
+.about__parameters {
+    margin: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.about__parameters div {
+    display: flex;
+}
+
+.about__parameters dt {
+    width: 62px;
+    margin: 0;
+    padding: 0;
+
+    color: #97A3B0;
+}
+
+.about__parameters dd {
+    margin: 0;
+    padding: 0;
+}
+
+.about__price {
+    text-align: right;
+}
+
+.about__price-old-value {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.about__price-old-value del {
+    display: inline-block;
+    margin: 0;
+    margin-top: 2px;
+    margin-right: 5px;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    vertical-align: middle;
+
+    color: #97A3B0;
+}
+
+.about__price-old-value span {
+    display: inline-block;
+    width: 34px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 16px;
+    vertical-align: middle;
+    text-align: center;
+
+    background-color: #FF5570;
+    color: #ffffff;
+    border-radius: 2px;
+}
+
+.about__price-value {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    padding-right: 52px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 43px;
+
+    background-color: transparent;
+    border: none;
+    color: #2C2E3F;
+
+    cursor: pointer;
+
+    &::before {
+        content: '';
+
+        position: absolute;
+
+        top: 8px;
+        right: 20px;
+
+        width: 24px;
+        height: 28px;
+
+        background-image: url('../img/icon-rouble.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &::after {
+        content: '';
+
+        position: absolute;
+
+        top: 19px;
+        right: 0;
+
+        width: 0;
+        height: 0;
+
+        border-style: solid;
+        border-width: 7.14px 4.9px 0 4.9px;
+        border-color: #2C2E3F transparent transparent transparent;
+    }
+}
+
+.about__btn-more {
+    position: relative;
+
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 0;
+    padding-right: 32px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+
+    background-color: transparent;
+    color: #0087FD;
+    border: none;
+
+    cursor: pointer;
+
+    &::before {
+        content: '';
+
+        position: absolute;
+
+        top: 6px;
+        right: 17px;
+        transform: rotate(90deg);
+
+        width: 13px;
+        height: 8px;
+
+        background-image: url('../img/arrow-big.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
