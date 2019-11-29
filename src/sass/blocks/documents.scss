@@ -1,0 +1,86 @@
+.documents {
+
+}
+
+.documents__slider {
+    height: 220px;
+    margin-top: 21px;
+}
+
+
+.documents__slider .slider__btn {
+    top: 90px;
+}
+
+.documents__slider-wrapper {
+    position: absolute;
+
+    display: flex;
+    width: 3000px;
+}
+
+.documents__slider-item {
+    position: relative;
+
+    display: block;
+    width: 240px;
+    height: 220px;
+    margin-right: 20px;
+    padding: 15px;
+    padding-top: 175px;
+    box-sizing: border-box;
+
+    text-decoration: none;
+
+    background-color: #ffffff;
+    background-position: top 30px center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+
+    &:nth-last-of-type(1) {
+        margin-right: 0;
+    }
+
+    &::before {
+        content: '';
+
+        position: absolute;
+
+        top: 15px;
+        right: 15px;
+
+        width: 20px;
+        height: 20px;
+
+        background-image: url('../img/icon-identification.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20px auto;
+    }
+
+    &--vetpassport {
+        background-image: url('../img/vetpassport.svg');
+    }
+
+    &--document {
+        background-image: url('../img/document.svg');
+    }
+
+    &--metrics {
+        background-image: url('../img/icon-metrics.png');
+    }
+}
+
+.documents__subtitle {
+    margin: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: #2C2E3F;
+}
+

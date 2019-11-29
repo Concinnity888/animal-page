@@ -5,6 +5,12 @@
         padding-left: 0;
         padding-right: 0;
     }
+
+    &--gray {
+        padding: 0;
+
+        background-color: transparent;
+    }
 }
 
 .block__top {
@@ -57,6 +63,15 @@
         background-image: url('../img/arrow-big.svg');
         background-position: center;
         background-repeat: no-repeat;
+    }
+
+    &--margin {
+        margin-bottom: 8px;
+        padding-right: 21px;
+    }
+
+    &::before {
+        right: 0;
     }
 }
 

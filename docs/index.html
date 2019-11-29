@@ -228,17 +228,28 @@
                         </section>
 
                         <section class="item__block block block--gray documents">
-                            <h2 class="block__title">Документы</h2>
-                            <a class="block__link-more" href="#">Все документы</a>
+                            <div class="block__top">
+                                <h2 class="block__title">Документы</h2>
+                                <a class="block__link-more block__link-more--margin" href="#">Все документы</a>
+                            </div>
 
-                            <div class="block__slider slider">
+                            <div class="slider documents__slider">
                                 <button class="slider__btn slider__btn--prev">Назад</button>
                                 <button class="slider__btn slider__btn--active slider__btn--next">Вперед</button>
 
-                                <div class="slider__wrapper">
-                                    <a class="slider__item" href="#">Ветпаспорт</a>
-                                    <a class="slider__item" href="#">Договор купли-продажи</a>
-                                    <a class="slider__item" href="#">Метрика</a>
+                                <div class="slider__wrapper documents__slider-wrapper">
+                                    <a class="slider__item documents__slider-item documents__slider-item--vetpassport" href="#">
+                                        <h3 class="documents__subtitle">Ветпаспорт</h3>
+                                        <span class="documents__identification"></span>
+                                    </a>
+                                    <a class="slider__item documents__slider-item documents__slider-item--document" href="#">
+                                        <h3 class="documents__subtitle">Договор купли-продажи</h3>
+                                        <span class="documents__identification"></span>
+                                    </a>
+                                    <a class="slider__item documents__slider-item documents__slider-item--metrics" href="#">
+                                        <h3 class="documents__subtitle">Метрика</h3>
+                                        <span class="documents__identification"></span>
+                                    </a>
                                 </div>
                             </div>
                         </section>
