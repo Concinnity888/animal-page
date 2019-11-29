@@ -1,1 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,800,900&display=swap&subset=cyrillic');
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/HelveticaRegular/Helvetica.eot');
+    src: url('../fonts/HelveticaRegular/HelveticaRegular.eot?#iefix')format('embedded-opentype'),
+    url('../fonts/HelveticaRegular/HelveticaRegular.woff') format('woff'),
+    url('../fonts/HelveticaRegular/HelveticaRegular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}

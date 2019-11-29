@@ -1,0 +1,74 @@
+.slider {
+    position: relative;
+
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider__btn {
+    position: absolute;
+}
+
+.slider__wrapper {
+    position: absolute;
+
+    display: flex;
+    width: 3000px;
+}
+
+.slider__btn {
+    z-index: 2;
+    position: absolute;
+
+    width: 50px;
+    height: 100px;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 0;
+
+    background-color: #A0A5B5;
+    border: none;
+    opacity: 0.5;
+
+    cursor: pointer;
+
+    &::before {
+        content: '';
+
+        position: absolute;
+
+        top: 42px;
+
+        width: 8px;
+        height: 16px;
+
+        background-image: url('../img/arrow.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &--prev {
+        left: 0;
+
+        border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+
+        &::before {
+            left: 18px;
+            transform: rotate(180deg);
+        }
+    }
+
+    &--next {
+        right: 0;
+
+        border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    }
+
+    &--active {
+        background-color: rgba(40, 168, 69, 0.5);
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,26 @@
+.gallery {
+
+}
+
+.gallery__top {
+    margin-bottom: 33px;
+}
+
+.gallery__slider {
+    height: 180px;
+}
+
+.gallery__slider-item {
+    display: flex;
+    width: 180px;
+    height: 180px;
+    margin-right: 10px;
+    overflow: hidden;
+
+    background-color: #F1F2F4;
+    background-image: url('../img/bg-gallery.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+
