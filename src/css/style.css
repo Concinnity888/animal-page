@@ -249,6 +249,29 @@ img {
     background-position: center;
     background-repeat: no-repeat; }
 
+.rating {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 4px;
+  padding-left: 40px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px; }
+  .rating::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icon-star.svg");
+    background-position: center;
+    background-repeat: no-repeat; }
+
 .information {
   padding-top: 75px;
   padding-bottom: 20px;
@@ -285,28 +308,126 @@ img {
   background-color: rgba(247, 200, 76, 0.3);
   color: #ffffff; }
 
-.rating {
-  position: relative;
-  display: block;
+.info-parent {
+  padding-bottom: 22px; }
+
+.info-parent__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  max-height: 100px;
+  margin-bottom: 22px; }
+
+.info-parent__photo {
+  margin-right: 18px;
+  border-radius: 50%; }
+
+.info-parent__title {
+  max-width: 160px;
   margin: 0;
+  margin-top: -4px;
+  margin-bottom: 14px;
   padding: 0;
-  padding-bottom: 4px;
-  padding-left: 40px;
   font-family: inherit;
   font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 36px; }
-  .rating::before {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px; }
+
+.info-parent__relationship {
+  display: inline-block;
+  width: 76px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 2px; }
+  .info-parent__relationship--blue {
+    border: solid 1px #62A0E5;
+    color: #62A0E5; }
+  .info-parent__relationship--pink {
+    border: solid 1px #FF5570;
+    color: #FF5570; }
+
+.info-parent__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.info-parent__parameters {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px; }
+
+.info-parent__parameters div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.info-parent__parameters dt {
+  width: 58px;
+  margin: 0;
+  padding: 0;
+  color: #97A3B0; }
+
+.info-parent__parameters dd {
+  margin: 0;
+  padding: 0; }
+
+.info-parent__ownership {
+  position: relative;
+  display: block;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  max-width: 165px;
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  padding-right: 44px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right; }
+  .info-parent__ownership::before {
     content: '';
     position: absolute;
-    top: 10px;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    background-image: url("../img/icon-star.svg");
+    top: -3px;
+    right: 0;
+    width: 34px;
+    height: 34px;
+    background-image: url("../img/icon-unconfirmed.svg");
     background-position: center;
     background-repeat: no-repeat; }
+  .info-parent__ownership--confirmed::before {
+    background-image: url("../img/icon-confirmed.svg"); }
 
 .footer {
   display: block;
