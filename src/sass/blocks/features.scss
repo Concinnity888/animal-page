@@ -1,0 +1,68 @@
+.features {
+    padding-bottom: 25px;
+}
+
+.features__title {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.features__slider {
+    height: 100px;
+}
+
+.features__list {
+    position: absolute;
+
+    display: flex;
+    width: 3000px;
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 6px;
+
+    list-style: none;
+}
+
+.features__list-item {
+    width: 126px;
+    height: 88px;
+    margin: 0;
+    padding: 0;
+    padding-top: 38px;
+    box-sizing: border-box;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    background-position: top 5px center;
+    background-repeat: no-repeat;
+    border-right: solid 1px #E8E8E8;
+
+    &:nth-last-of-type(1) {
+        border-right: none;
+    }
+
+    &--standard {
+        background-image: url('../img/icon-features-standard.svg');
+    }
+
+    &--toilet {
+        background-image: url('../img/icon-features-toilet.svg');
+    }
+
+    &--champs {
+        background-image: url('../img/icon-features-champs.svg');
+    }
+
+    &--water {
+        background-image: url('../img/icon-features-water.svg');
+    }
+
+    &--travel {
+        background-image: url('../img/icon-features-travel.png');
+    }
+}

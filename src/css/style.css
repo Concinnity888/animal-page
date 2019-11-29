@@ -450,6 +450,9 @@ img {
 
 .block {
   padding-top: 25px; }
+  .block--padding-none {
+    padding-left: 0;
+    padding-right: 0; }
 
 .block__top {
   display: -webkit-box;
@@ -781,6 +784,57 @@ img {
     background-image: url("../img/icon-twitter.svg"); }
   .share__link--mail {
     background-image: url("../img/icon-mail.svg"); }
+
+.features {
+  padding-bottom: 25px; }
+
+.features__title {
+  margin-left: 30px;
+  margin-bottom: 10px; }
+
+.features__slider {
+  height: 100px; }
+
+.features__list {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 3000px;
+  margin: 0;
+  padding-left: 30px;
+  padding-top: 6px;
+  list-style: none; }
+
+.features__list-item {
+  width: 126px;
+  height: 88px;
+  margin: 0;
+  padding: 0;
+  padding-top: 38px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  background-position: top 5px center;
+  background-repeat: no-repeat;
+  border-right: solid 1px #E8E8E8; }
+  .features__list-item:nth-last-of-type(1) {
+    border-right: none; }
+  .features__list-item--standard {
+    background-image: url("../img/icon-features-standard.svg"); }
+  .features__list-item--toilet {
+    background-image: url("../img/icon-features-toilet.svg"); }
+  .features__list-item--champs {
+    background-image: url("../img/icon-features-champs.svg"); }
+  .features__list-item--water {
+    background-image: url("../img/icon-features-water.svg"); }
+  .features__list-item--travel {
+    background-image: url("../img/icon-features-travel.png"); }
 
 .footer {
   display: block;
